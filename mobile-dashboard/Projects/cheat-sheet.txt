@@ -1,0 +1,12 @@
+
+
+// These are known vendors
+grep "20140105" com.workday.workdroidapp_device_installs.csv | awk -F, '{ print $1, $2 }' | grep -i "\(Samsung\|Sony\|Motorola\|Google\|Huawei\|Toshiba\|ZTE\|Pantech\|ASUS\|LGE\|Lenovo\|HTC\|Acer\|Kyocera\)" | wc -l
+
+grep "20140104" com.workday.workdroidapp_device_installs.csv | awk -F, '{ print $1, $2 }' | grep -i "\(Samsung\|Sony\|Motorola\|Google\|Huawei\|Toshiba\|ZTE\|Pantech\|ASUS\|LGE\|Lenovo\|HTC\|Acer\|Kyocera\)" | wc -l
+
+
+grep "20140104" com.workday.workdroidapp_device_installs.csv | awk -F, '{ print $1, $2 }' | grep -i "\(Samsung AND S3)" | wc -l
+
+
+curl -H "Content-Type:application/json" -d @com.workday.workdroidapp_app_version_installs.json -vX POST http://127.0.0.1:5984/test_suite_db

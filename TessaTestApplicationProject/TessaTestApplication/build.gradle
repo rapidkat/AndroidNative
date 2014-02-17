@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
 apply plugin: 'android'
@@ -20,8 +20,33 @@ android {
         minSdkVersion 7
         targetSdkVersion 19
     }
+
+    signingConfigs {
+
+        release {
+
+
+            storeFile file('Tessa-release-key.keystore')
+            storePassword "kookooroo"
+            keyAlias "TessaRelease"
+            keyPassword "kookooroo"
+        }
+    }
+
+
+
+
+    buildTypes {
+
+        release {
+            debuggable false
+            signingConfig signingConfigs.release
+        }
+    }
+
 }
 
 dependencies {
 	compile 'com.android.support:appcompat-v7:+'
 }
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/docs-assets/ico/favicon.png">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Android Dashboard</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--
+            <li class="active"><a href="#">OS installs</a></li>
+            <li><a href="#">App Version</a></li>
+            <li><a href="#">Link</a></li>
+          -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Install base</li>
+                <li><a id="current_device_installs" href="#">Current Device Installs</a></li>
+                <li><a id="current_user_installs" href="#">Current User Installs</a></li>
+                <li><a id="daily_device_uninstalls" href="#">Daily Device Installs</a></li>
+                <li><a id="daily_device_installs" href="#">Daily Device Uninstalls</a></li>
+                <li><a id="daily_device_upgrades" href="#">Daily Device Upgrades</a></li>
+                <li><a id="daily_user_installs" href="#">Daily User Installs</a></li>
+                <li><a id="daily_user_uninstalls" href="#">Daily User Uninstalls</a></li>
+                <li><a id="total_user_installs" href="#">Total User Installs</a></li>
+                <li><a id="current_user_android_os" href="#">Current Android Version</a></li>
+                <li><a id="current_user_app_version" href="#">Current WD Application Version</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">More stuff</li>
+                <li><a href="#">Even more stuff later</a></li>
+                <li><a href="#">Even more stuff later</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        -->
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      
+      <div class="jumbotron">
+        <div id="container" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+        <!--        
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      -->
+      </div>
+
+    </div>
+    
+     <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/3p/jquery-1.10.2.js"></script>
+    <script src="./js/3p/bootstrap.min.js"></script>
+    <script src="./js/3p/highcharts.js"></script>
+    <script src="./js/3p/exporting.js"></script>
+    <script src="./js/utilities.js"></script>        
+    <script src="./js/static_data.js"></script>    
+    <script src="./js/overall_chart.js"></script>
+    <script src="./js/os_chart.js"></script>
+    <script src="./js/app_version_chart.js"></script>
+    <script src="./js/client_entry.js"></script>
+
+
+  </body>
+</html>

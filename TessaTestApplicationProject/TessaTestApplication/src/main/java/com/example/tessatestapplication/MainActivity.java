@@ -1,4 +1,4 @@
-package com.example.tessatestapplication;
+package com.tidramo.tessatestapplication;
 
 import java.util.Locale;
 
@@ -22,6 +22,12 @@ import java.util.logging.Logger;
 import android.util.Log;
 
 public class MainActivity extends ActionBarActivity {
+
+    /**
+     * Tidramo LLC
+     *
+     * */
+
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -73,8 +79,6 @@ public class MainActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -132,6 +136,7 @@ public class MainActivity extends ActionBarActivity {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            args.putBoolean("MyBoolean", true);
             fragment.setArguments(args);
             return fragment;
         }
@@ -144,27 +149,27 @@ public class MainActivity extends ActionBarActivity {
                 Bundle savedInstanceState) {
 
 
-            int sectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
-            switch (sectionNumber)
+            int getCurrentView = getArguments().getInt(ARG_SECTION_NUMBER);
+            switch (getCurrentView)
             {
                 case 1:
-                    sectionNumber = R.layout.fragment_main;
+                    getCurrentView = R.layout.fragment_main;
                     break;
                 case 2:
-                    sectionNumber = R.layout.fragment_main_2;
+                    getCurrentView = R.layout.fragment_main_2;
                     break;
                 case 3:
-                    sectionNumber = R.layout.fragment_main;
+                    getCurrentView = R.layout.fragment_main;
                     break;
                 default:
-                    sectionNumber = R.layout.fragment_main;
+                    getCurrentView = R.layout.fragment_main;
                     break;
                 }
 
 
-            View rootView = inflater.inflate(sectionNumber, container, false);
+            View rootView = inflater.inflate(getCurrentView, container, false);
             //TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            //textView.setText(Integer.toString(getCurrentView().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
