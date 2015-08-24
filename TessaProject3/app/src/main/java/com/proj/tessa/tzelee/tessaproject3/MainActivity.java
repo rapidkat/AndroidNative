@@ -10,15 +10,18 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+// @copyright Tidramo LLC
 public class MainActivity extends ActionBarActivity {
 
     /**
@@ -49,6 +52,9 @@ public class MainActivity extends ActionBarActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        NativeLRU cache = new NativeLRU();
+        Log.v("MyClass" , String.format("%s", cache.isLRUEmpty()));
 
     }
 
@@ -96,7 +102,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 10;
         }
 
         @Override
@@ -144,6 +150,7 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             int getCurrentView = getArguments().getInt(ARG_SECTION_NUMBER);
 
+
             switch (getCurrentView)
             {
                 case 1:
@@ -155,13 +162,36 @@ public class MainActivity extends ActionBarActivity {
                 case 3:
                     getCurrentView = R.layout.fragment_main3;
                     break;
+                case 4:
+                    getCurrentView = R.layout.fragment_main4;
+                    break;
+                case 5:
+                    getCurrentView = R.layout.fragment_main5;
+                    break;
+                case 6:
+                    getCurrentView = R.layout.fragment_main6;
+                    break;
+                case 7:
+                    getCurrentView = R.layout.fragment_main7;
+                    break;
+                case 8:
+                    getCurrentView = R.layout.fragment_main8;
+                    break;
+                case 9:
+                    getCurrentView = R.layout.fragment_main9;
+                    break;
+                case 10:
+                    getCurrentView = R.layout.fragment_main10;
+                    break;
                 default:
                     getCurrentView = R.layout.fragment_main;
+
                     break;
             }
 
             View rootView = inflater.inflate(getCurrentView, container, false);
             return rootView;
+
         }
     }
 

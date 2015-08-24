@@ -8,14 +8,12 @@ android {
         applicationId "com.proj.tessa.tzelee.tessaproject3"
         minSdkVersion 16
         targetSdkVersion 19
-        versionCode 1
-        versionName "1.0"
+        versionCode 12
+        versionName "12.0"
     }
     signingConfigs {
 
         release {
-
-
             storeFile file('Tessa-release-key.keystore')
             storePassword "kookooroo"
             keyAlias "TessaRelease"

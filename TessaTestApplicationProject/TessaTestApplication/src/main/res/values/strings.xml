@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TessaTestApplication</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-    <string name="action_settings_item1">Settings Section 1</string>
-    <string name="action_settings_item2">Settings Section 2</string>
-    <string name="action_settings_item3">Settings Section 3</string>
+    <string name="app_name">30 TessaTestApplication Alpha</string>
+    <string name="title_section1">30 Section 10AAA</string>
+    <string name="title_section2">Section 20AAA</string>
+    <string name="title_section3">Section 30AAA</string>
+    <string name="action_settings_item1">Settings Section 10AAA</string>
+    <string name="action_settings_item2">Settings Section 20AAA</string>
+    <string name="action_settings_item3">Settings Section 30AAA</string>
     <string name="edit_message">Input text ........</string>
     <string name="button_send">Send Text</string>
 </resources>

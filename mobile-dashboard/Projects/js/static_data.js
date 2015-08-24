@@ -11,10 +11,10 @@ summaryCharts["daily_user_uninstalls"] = {"viewKey":"daily_user_uninstalls", "fr
 summaryCharts["total_user_installs"] = {"viewKey":"total_user_installs", "friendlyName" : "Total User Installs", "description" :"the total number of unique users that have ever installed this app. We only count one install regardless of how many different devices they installed it on. It includes the users who have later uninstalled the app."};
 
 var publicationDates = [];
-publicationDates.push([createNewDate("20130429"), 1]);
-publicationDates.push([createNewDate("20130522"), 2]);
-publicationDates.push([createNewDate("20130627"), 3]);
-publicationDates.push([createNewDate("20131021"), 4]);
-publicationDates.push([createNewDate("20131023"), 5]);
-publicationDates.push([createNewDate("20131023"), 7]);
-publicationDates.push([createNewDate("20131215"), 8]);
+publicationDates.push([createNewDate("20130529"), 1]);
+publicationDates.push([createNewDate("20130622"), 2]);
+publicationDates.push([createNewDate("20130727"), 3]);
+publicationDates.push([createNewDate("20131121"), 4]);
+publicationDates.push([createNewDate("20131123"), 5]);
+publicationDates.push([createNewDate("20131123"), 7]);
+publicationDates.push([createNewDate("20140101"), 8]);
