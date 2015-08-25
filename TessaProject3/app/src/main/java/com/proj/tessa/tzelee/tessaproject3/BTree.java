@@ -2,6 +2,7 @@ package com.proj.tessa.tzelee.tessaproject3;
 
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -69,15 +70,16 @@ public class BTree {
             }
         }
     }
-    public void depthFirstSearch()
+    public ArrayList depthFirstSearch()
     {
         // push the root node
         Stack<TreeNode> myStack = new Stack<TreeNode>();
         myStack.push(this.getRootNode());
-
+        ArrayList outputValues = new ArrayList();
         while(!myStack.empty())
         {
             TreeNode currentNode = myStack.pop();
+            outputValues.add(currentNode.getValue());
             Log.v(debugTag, "depth value is " + currentNode.getValue());
 
             if(currentNode.getLeftNode() != null)
@@ -89,17 +91,19 @@ public class BTree {
                 myStack.push(currentNode.getRightNode());
             }
         }
+        return outputValues;
     }
 
-    public void breadthFirstSearch()
+    public ArrayList breadthFirstSearch()
     {
         // push the root node
         LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
         queue.add(this.getRootNode());
-
+        ArrayList outputList = new ArrayList();
         while(queue.size() > 0)
         {
             TreeNode currentNode = queue.removeFirst();
+            outputList.add(currentNode.getValue());
             Log.v(debugTag, " breadth value is " + currentNode.getValue());
 
             if(currentNode.getLeftNode() != null)
@@ -111,6 +115,7 @@ public class BTree {
                 queue.add(currentNode.getRightNode());
             }
         }
+        return outputList;
     }
 
 }
