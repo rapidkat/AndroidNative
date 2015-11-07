@@ -2,6 +2,7 @@ package com.proj.tessa.tzelee.tessaproject3;
 
 import java.util.Locale;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -72,6 +73,12 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        if(id == R.id.action_settings_1)
+        {
+            Intent a=new Intent(this, CollectInformationActivity.class);
+            startActivity(a);
+        }
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
