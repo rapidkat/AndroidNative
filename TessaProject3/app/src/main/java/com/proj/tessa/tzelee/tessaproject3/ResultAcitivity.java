@@ -1,27 +1,35 @@
 package com.proj.tessa.tzelee.tessaproject3;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 
 
-public class CollectInformationActivity extends ActionBarActivity {
+public class ResultAcitivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collect_information);
+        setContentView(R.layout.activity_result_acitivity);
+        // grab text
+        String value = getIntent().getStringExtra("general_text");
+        String value2 = getIntent().getStringExtra("general_text_2");
+
+        TextView textValue = (TextView) findViewById(R.id.textView2);
+        TextView textValue2 = (TextView) findViewById(R.id.textView3);
+
+        textValue.setText(value);
+        textValue2.setText(value2);
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_collect_information, menu);
+        getMenuInflater().inflate(R.menu.menu_result_acitivity, menu);
         return true;
     }
 
@@ -39,18 +47,4 @@ public class CollectInformationActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    // This is the button onclick handler
-    public void callSubmit(View view)
-    {
-        EditText mText   = (EditText)findViewById(R.id.editText);
-        Intent a=new Intent(this, ResultAcitivity.class);
-        a.putExtra("general_text", mText.getText().toString());
-
-        EditText mText2   = (EditText)findViewById(R.id.editText2);
-        a.putExtra("general_text_2", mText2.getText().toString());
-
-        startActivity(a);
-    }
-
 }

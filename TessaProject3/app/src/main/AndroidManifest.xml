@@ -20,6 +20,10 @@
             android:name=".CollectInformationActivity"
             android:label="@string/title_activity_collect_information" >
         </activity>
+        <activity
+            android:name=".ResultAcitivity"
+            android:label="@string/title_activity_result_acitivity" >
+        </activity>
     </application>
 
 </manifest>

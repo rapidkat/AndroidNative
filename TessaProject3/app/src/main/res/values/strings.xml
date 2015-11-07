@@ -8,5 +8,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">The city of good living.</string>
     <string name="title_activity_collect_information">CollectInformationActivity</string>
+    <string name="title_activity_result_acitivity">ResultAcitivity</string>
 
 </resources>

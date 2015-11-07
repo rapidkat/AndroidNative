@@ -4,38 +4,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.proj.tessa.tzelee.tessaproject3.CollectInformationActivity">
+    tools:context="com.proj.tessa.tzelee.tessaproject3.ResultAcitivity">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:hint="Write Your Name"
-        android:layout_marginTop="117dp" />
+        android:layout_marginTop="140dp" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:hint="Write Somthing"
-        android:layout_marginTop="112dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Small Text"
+        android:id="@+id/textView3"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="59dp"
-        android:onClick="callSubmit"/>
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_marginBottom="91dp" />
 
 </RelativeLayout>
