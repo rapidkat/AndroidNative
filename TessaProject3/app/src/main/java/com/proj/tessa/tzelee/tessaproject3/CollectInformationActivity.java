@@ -53,4 +53,18 @@ public class CollectInformationActivity extends ActionBarActivity {
         startActivity(a);
     }
 
+    // Floating action button via image view
+    public void callAddDetails(View view)
+    {
+        EditText mText   = (EditText)findViewById(R.id.editText);
+        Intent a=new Intent(this, ResultAcitivity.class);
+        a.putExtra("general_text", mText.getText().toString());
+
+        EditText mText2   = (EditText)findViewById(R.id.editText2);
+        a.putExtra("general_text_2", mText2.getText().toString());
+
+        startActivity(a);
+
+    }
+
 }

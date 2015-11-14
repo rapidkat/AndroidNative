@@ -76,6 +76,7 @@
         android:tint="@android:color/white"
         android:background="@drawable/round_image_style"
         android:elevation="6dp"
+        android:onClick="callAddDetails"
         />
 
 </RelativeLayout>
