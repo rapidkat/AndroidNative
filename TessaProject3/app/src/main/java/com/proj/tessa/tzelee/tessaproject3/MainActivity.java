@@ -78,6 +78,7 @@ public class MainActivity extends ActionBarActivity {
         {
             Intent a=new Intent(this, CollectInformationActivity.class);
             startActivity(a);
+            return true;
         }
 
         //noinspection SimplifiableIfStatement

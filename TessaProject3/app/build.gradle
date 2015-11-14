@@ -7,9 +7,10 @@ android {
     defaultConfig {
         applicationId "com.proj.tessa.tzelee.tessaproject3"
         minSdkVersion 16
-        targetSdkVersion 19
+        targetSdkVersion 22
         versionCode 12
         versionName "12.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
 
@@ -33,4 +34,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.2'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
 }
