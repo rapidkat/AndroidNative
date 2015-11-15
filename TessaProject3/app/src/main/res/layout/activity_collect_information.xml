@@ -75,7 +75,7 @@
         android:src="@drawable/ic_done_black_24dp"
         android:tint="@android:color/white"
         android:background="@drawable/round_image_style"
-        android:elevation="6dp"
+        android:elevation="4dp"
         android:onClick="callAddDetails"
         />
 
