@@ -1,0 +1,15 @@
+{
+	"name":"Predict",
+	"version":"1.0.0",
+	"author": "Tze Lee",
+	"description": "Prototype Scrapper",
+	"repository": {
+  		"type": "git",
+  		"url": "https://github.com/rapidkat/Scrapper"
+	},
+	"dependencies" :
+	{	
+		"cheerio": "~0.22.0",	
+		"node-inspector" : "~0.12.3"
+	}	
+}
