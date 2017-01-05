@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/TessaProject3.iml" filepath="$PROJECT_DIR$/TessaProject3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp-3.5.0/okhttp-3.5.0.iml" filepath="$PROJECT_DIR$/okhttp-3.5.0/okhttp-3.5.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/tzelibs/tzelibs.iml" filepath="$PROJECT_DIR$/tzelibs/tzelibs.iml" />
     </modules>
   </component>
 </project>
-
